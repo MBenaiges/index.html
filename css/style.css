@@ -12,17 +12,14 @@ body {
   margin: 0;
   padding: 0;
 }
-
-
 /* ---- typography ---- */
 
 body {
   color: #111;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Inconsolata', monospace;
   font-size: 16px;
   line-height: 147%;
 }
-
 
 p {
   margin: 0;
@@ -33,12 +30,68 @@ ul{
 }
 
 
-/* ---- layout ---- */
+/* ---- NAV BAR ---- */
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+.top-links {
+  display: inline-block;
+  float: right;
+  padding: 0;
+  margin: 0 20px 0 0;
+}
+.top-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+nav{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 10px
+  
+}
 
-#site-header {
-  padding: 30px 0;
+header {
+  background: linear-gradient(#187e38,#72963f);
+}
+header a{
   color: white;
-  background: #111;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+}
+header a:hover{
+  text-decoration: underline;
+  color: black;
+  font-weight: 800;
+}
+.button-home{
+  background:#187e38;
+  text-transform: uppercase;
+  margin-left: 5%;
+  border-radius: 5px;
+  width: 5%;
+  padding: 5px 6px 5px 6px;
+  text-align: center;
+  font-size: .875rem;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+.button-home:hover{
+  color:#187e38;
+  background: black; 
+}
+hr{
+  width: 60%;
+  margin-top: 5%;
+}
+/*ABOUT  ME*/
+#about-me{
+  margin-top:10%;
+  margin-left: 10%;
 }
 
 #site-footer {
@@ -68,7 +121,7 @@ ul{
 }
 
 
-/* ---- components ---- */
+
 
 .button {
   width: 100%;
@@ -82,23 +135,15 @@ ul{
   background-color: #fff;
 }
 
-/* ---- section ---- */
-.top-links {
-  display: inline-block;
-  float: right;
-  padding: 0;
-  margin: 0 20px 0 0;
-}
-.top-links li {
-  display: inline-block;
-  margin: 0 10px;
-}
+
+
 #interests h2{
   padding-top:3%;
   padding-bottom:3%;
   text-align: center;
   text-transform: uppercase;
   font-size: 30px; 
+  text-decoration: underline;
 }
 #interests h3{
   text-transform: uppercase;
@@ -137,15 +182,7 @@ article p{
 .clearfix{
   clear: both;
 }
-header {
-  background: linear-gradient(#187e38,#72963f);
-}
-header a{
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 600;
-}
+
 .formulario{
   padding: 5%;
   padding-left:25%;
@@ -191,28 +228,6 @@ footer{
   margin-right: auto;
 }
 
-nav{
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.button-home{
-  background:#187e38;
-  text-transform: uppercase;
-  margin-left: 5%;
-  border-radius: 5px;
-  width: 5%;
-  padding: 5px 6px 5px 6px;
-  text-align: center;
-  font-size: .875rem;
-  letter-spacing: 1.5px;
-  font-weight: 600;
-}
-
-.button-home:hover{
-  color:#187e38;
-  background: black; 
-}
 
 #projects{
   background-image: url("../img/notebook.jpg");
